@@ -1,0 +1,16 @@
+.bg-purple{
+    background-color: #2b253d;
+}
+
+.btn-purple{
+    background-color: #8a6cc0;
+    color: white;
+}
+
+.btn-custom-width{
+    width: 200px;
+}
+
+.btn-purple:hover{
+    background-color: #6f4a9b;
+}
