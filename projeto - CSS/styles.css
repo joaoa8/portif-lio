@@ -1,0 +1,180 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+h1, h2{
+    color: #0654b3;
+}
+
+header h1{
+    text-align: center;
+    font-size: 50px;
+    color: #0654b3;
+}
+
+.menu-container{
+    position: sticky;
+    top: 0;
+    z-index: 1000;  
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    margin-inline: auto;
+    text-decoration: none;
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.menu a:hover {
+    color: #0654b3;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+main{
+    padding: 20px;
+}
+
+#home{
+    margin: 20px 0;
+}
+
+#home p {
+    line-height: 1.6;
+}
+
+.trivia-item{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.trivia-item img{
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.trivia-item p{
+   margin: 10px;
+}
+
+.categories-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.categories-list li {
+    margin: 10px;
+}
+
+.categories-list a{
+    color: #0654b3;
+    text-decoration: none;
+}
+
+.categories-list a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    margin-top: 5px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+form button {
+    margin-top: 10px;
+    background-color: #0654b3;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-info{
+    margin-top: 30px;
+}
+
+.contact-info img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.subscribe-button{
+    margin-top: 10px;
+    background-color: #04c230;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    animation: pulse 1.5s infinite;
+}
+
+.subscribe-button:hover {
+    background-color: #13a836;
+}
